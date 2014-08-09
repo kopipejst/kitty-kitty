@@ -1,0 +1,45 @@
+<template id="cat-template">
+    <img id="image" src="" />
+</template>
+
+<script>
+
+var doc = document.currentScript.ownerDocument,
+    CatProto = Object.create(HTMLElement.prototype),
+    template = doc.querySelector("#cat-template"),
+    cat = template.content.cloneNode(true);
+
+CatProto.createdCallback = function() {
+
+    var options = {},
+        url = "http://thecatapi.com/api/images/get?format=src";
+
+
+    options.size = this.getAttribute('size') ? this.getAttribute('size') : '';
+    options.type = this.getAttribute('type') ? this.getAttribute('type') : '';
+
+    var params = '';
+
+    for (var i in options) {
+        if (options[i]) {
+            params += '&' + i + '=' + options[i];
+        }
+    }
+
+    url += params;
+
+
+    var shadow = this.shadow = this.createShadowRoot();
+    this.shadow.appendChild(cat);
+
+    var image = this.shadow.querySelector('#image');
+    image.src = url;
+
+
+};
+
+var Cat = doc.registerElement('kitty-kitty', {
+    'prototype': CatProto
+});
+
+</script>

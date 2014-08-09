@@ -3,16 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, minimal-ui">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
     <link rel="import" href="webcomponent/kitty-kitty.html">
+    <link href='assets/style.css' rel='stylesheet' type='text/css'>
+
 
 </head>
 <body>
 
+    <div class="page">
+
+        <h1>&lt;kitty-kitty&gt;</h1>
+        <h2>A web component for adding random cat pictures to webpages</h2>
+
+        <kitty-kitty type="gif" size="med"></kitty-kitty>
+        <p>
+            Refresh the page for another kitty!
+        </p>
+
+    </div>
 
 
-    <kitty-kitty type="gif"></kitty-kitty>
+    <div class="bottom">
+        <div class="page">
+            <h3>How to use kitty-kitty</h3>
+            <p>Include HTML Import tag</p>
+            <code>
+                &lt;link rel="import" href="webcomponent/kitty-kitty.html"&gt;
+            </code>
+            <p>Then place cats where ever you want!</p>
+            <code>
+                &lt;kitty-kitty&gt;&lt;/kitty-kitty&gt;
+            </code>
 
+            <h3>We have parameters</h3>
+            <p>
+                Decide what types of images you'd like to show.<br />
+                Accepted types are JPG, PNG and GIF.
+            </p>
+            <code>
+                &lt;kitty-kitty type="gif"&gt;&lt;/kitty-kitty&gt;
+            </code>
+            <p>
+                Limit image dimension.<br />
+                Small (250px), Med (500px) & Full (original size).
+            </p>
+            <code>
+                &lt;kitty-kitty size="med"&gt;&lt;/kitty-kitty&gt;
+            </code>
 
+            <h3>What's this again</h3>
+            <p>
+                Decide what types of images you'd like to show.<br />
+                Accepted types are JPG, PNG and GIF.
+            </p>
+        </div>
+    </div>
 
 </body>
 </html>
+

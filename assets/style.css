@@ -1,0 +1,63 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #949FAB;
+    font-size: 17px;
+    margin: 0;
+}
+
+.page {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, code {
+    margin: 0;
+}
+
+h1 {
+    font-size: 75px;
+    color: #EC6647;
+    text-align: center;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 50px;
+}
+
+p {
+    margin: 15px 0;
+}
+
+code {
+    background-color: #fff;
+    padding: 20px;
+    display: block;
+}
+
+.bottom {
+    color: #949FAB;
+    background-color: #506274;
+    padding: 20px 0 50px;
+    margin-top: 70px;
+}
+
+.bottom p {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
